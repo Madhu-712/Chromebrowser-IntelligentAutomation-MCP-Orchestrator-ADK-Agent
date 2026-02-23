@@ -89,3 +89,4 @@ This project is licensed under the [Your License Here] - see the `LICENSE` file 
 *   [Google ADK Documentation](https://ai.google.dev/adk)
 *   [Gemini API Documentation](https://ai.google.dev/docs/gemini_api_overview)
 *   [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/)
+*   [Chrome DevTools MCP: Debug your browser session](https://developer.chrome.com/blog/chrome-devtools-mcp-debug-your-browser-session)
