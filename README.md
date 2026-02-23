@@ -1,14 +1,14 @@
 # Webperformance-Agent
 
 ## Overview
-The Webperformance-Agent is an AI-powered tool designed to act as an expert web performance analyst. It leverages the Gemini-2.5-Flash LLM to interact with a browser environment, analyze critical web performance metrics (such as FCP, FID, LCP, and CLS), and provide deep insights into user experience and responsiveness. This agent is capable of simulating various user interactions and capturing performance data to help optimize web applications.
+The Webperformance-Agent is an AI-powered tool designed to act as an expert web performance analyst. It leverages the Gemini-3-Flash LLM to interact with a browser environment, analyze critical web performance metrics (such as FCP, FID, LCP, and CLS), and provide deep insights into user experience and responsiveness. This agent is capable of simulating various user interactions and capturing performance data to help optimize web applications.
 
 ## Architecture
 The agent's architecture is centered around the `LlmAgent` from `google.adk.agents`. It uses a large language model (Gemini-2.5-Flash) for its analytical capabilities and decision-making. For interacting with the web browser, it utilizes an `MCPToolset` (Managed Code Program Toolset) which connects to `chrome-devtools-mcp`. This allows the agent to control browser actions and gather detailed performance data.
 
 **Conceptual Infographic for Architecture:**
 Imagine a diagram with three main components:
-1.  **"Gemini-2.5-Flash LLM (Brain)"**: Represented as a cloud or a brain icon.
+1.  **"Gemini-3-Flash LLM (Brain)"**: Represented as a cloud or a brain icon.
     *   *Input*: User Commands (e.g., "Analyze webpage X", "Take a screenshot of Y").
     *   *Output*: Actions/Analysis requests.
 2.  **"Webperformance-Agent (Orchestrator)"**: Represented as a central hub or a robot icon. This is the `LlmAgent` that interprets LLM output and orchestrates tool calls.
