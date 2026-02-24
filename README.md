@@ -1,4 +1,13 @@
-Automated Webintelligent-Adk-Agent which analyzes/test web page performance and also automates browser task by taking actions following natural language instructions. 
+## Advanced Browser Orchestration & Analysis via Chrome DevTools MCP.
+
+*Performance Intelligence: Audits web metrics and suggests optimizations to boost business KPIs.
+
+*Dynamic Automation: Executes end-to-end tasks like form filling, page resizing, and navigation.
+
+*Visual Captures: Automated screenshotting for testing and documentation.
+
+*NLP-Driven: Converts user instructions directly into browser actions and technical insights.
+
 
 ## Overview
 The Webperformance-Agent is an AI-powered tool designed to act as an expert web performance analyst. It leverages the Gemini-3-Flash LLM to interact with a browser environment, analyze critical web performance metrics (such as FCP, FID, LCP, and CLS), and provide deep insights into user experience and responsiveness. 
@@ -14,7 +23,7 @@ Core Web Vitals directly influence business success by improving user retention,
 
 *CLS (Cumulative Layout Shift): Prevents lost revenue and "accidental clicks" by keeping page elements stable and predictable during the user journey. 
 
-Business Performance Benchmarks:
+## Business Performance Benchmarks:
 
 Conversion Lift: A one-second improvement in load time can increase retail conversions by up to 8.4%.
 Retention: Mobile users are 53% more likely to abandon a site if it takes longer than 3 seconds to load.
