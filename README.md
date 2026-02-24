@@ -2,13 +2,20 @@
 
 ## Overview
 The Webperformance-Agent is an AI-powered tool designed to act as an expert web performance analyst. It leverages the Gemini-3-Flash LLM to interact with a browser environment, analyze critical web performance metrics (such as FCP, FID, LCP, and CLS), and provide deep insights into user experience and responsiveness. 
+
 Core Web Vitals directly influence business success by improving user retention, increasing conversion rates, and boosting search engine visibility. 
-FCP (First Contentful Paint): Reduces initial bounce rates by giving users immediate visual feedback that the site is responsive and loading.
-LCP (Largest Contentful Paint): Directly correlates with higher conversion rates and sales by delivering the most important content before users lose interest.
-FID (First Input Delay): Enhances customer trust and interaction success by ensuring the site reacts instantly to their first click or tap.
-CLS (Cumulative Layout Shift): Prevents lost revenue and "accidental clicks" by keeping page elements stable and predictable during the user journey. 
+
+
+*FCP (First Contentful Paint): Reduces initial bounce rates by giving users immediate visual feedback that the site is responsive and loading.
+
+*LCP (Largest Contentful Paint): Directly correlates with higher conversion rates and sales by delivering the most important content before users lose interest.
+
+*FID (First Input Delay): Enhances customer trust and interaction success by ensuring the site reacts instantly to their first click or tap.
+
+*CLS (Cumulative Layout Shift): Prevents lost revenue and "accidental clicks" by keeping page elements stable and predictable during the user journey. 
 
 Business Performance Benchmarks:
+
 Conversion Lift: A one-second improvement in load time can increase retail conversions by up to 8.4%.
 Retention: Mobile users are 53% more likely to abandon a site if it takes longer than 3 seconds to load.
 SEO Advantage: Sites meeting "Good" thresholds (e.g., LCP ≤ 2.5s) are prioritized by Google's ranking algorithm. 
@@ -30,7 +37,7 @@ Here's a diagram with three main components:
 2.  **"Webperformance-Agent (Orchestrator)"**: Represented as a central hub or a robot icon. This is the `LlmAgent` that interprets LLM output and orchestrates tool calls.
 3.  **"Browser Environment (The Web)"**: Represented as a web browser window icon.
     *   *Controlled by*: `MCPToolset` (connecting to `chrome-devtools-mcp`).
-    *   *Actions*: Taking screenshots, resizing page, uploading files, filling forms, managing tabs (close, hover, click), simulating key presses.
+    *   *Actions*: Performs Intelligent browser automation task like taking screenshots, resizing page, uploading files, filling forms based on natural language prompts(find hotels for 2 adults in Goa for tomorrow's date), managing tabs (close, hover, click), simulating key presses.
     *   *Data Collected*: FCP, FID, LCP, CLS, network requests, console logs, trace data.
 Arrows would flow from LLM to Agent, and from Agent to Browser (for actions) and back from Browser to Agent (for data/feedback), and then to LLM for analysis.
 
